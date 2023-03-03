@@ -1,0 +1,33 @@
+.left-sidebar {
+  grid-column: left-sidebar-start / left-sidebar-end;
+  grid-row: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: absolute;
+}
+
+.vl {
+  border-left: 1.5px solid black;
+  height: 300px;
+  position: fixed;
+  top: 37rem;
+  left: 4.5rem;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;
+  top: 26rem;
+  left: 2.6rem;
+}
+.social a {
+  margin-bottom: 1rem;
+  font-size: 22px;
+  color: &text-color;
+}
+.social a:hover {
+  color: &hover;
+}

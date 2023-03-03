@@ -1,0 +1,46 @@
+.works {
+  grid-column: center-start / center-end;
+  grid-row: 4 /5;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+
+  h1 {
+    display: grid;
+    grid-template-columns: max-content 20rem;
+    grid-column-gap: 1.5rem;
+    align-items: center;
+  }
+
+  h1::after {
+    content: "";
+    height: 1px;
+    display: block;
+    background-color: rgb(156, 152, 152);
+  }
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2.5rem 0;
+
+  &__content {
+    .description {
+      padding: 20px;
+      background-color: rgb(227, 228, 208);
+    }
+  }
+
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.project-1 {
+  .features__content {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
